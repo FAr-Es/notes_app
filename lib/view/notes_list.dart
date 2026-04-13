@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/cubit/notes_cubit.dart';
-import 'package:notes_app/note_details.dart';
+import 'package:notes_app/view/note_details.dart';
 
 class NotesList extends StatefulWidget {
   const NotesList({super.key});

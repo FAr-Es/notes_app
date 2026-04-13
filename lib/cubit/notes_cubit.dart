@@ -11,6 +11,11 @@ class NotesCubit extends Cubit<NotesCubitState> {
 
   final _collection = FirebaseFirestore.instance.collection('notes');
   StreamSubscription? _subscription;
+  @override
+  Future<void> close() {
+    _subscription?.cancel();
+    return super.close();
+  }
 
   void getNotes() {
     emit(NotesCubitLoading());

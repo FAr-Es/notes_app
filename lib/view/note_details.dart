@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:notes_app/edit_note.dart';
+import 'package:notes_app/view/edit_note.dart';
 import 'package:notes_app/model/notes_model.dart';
 
 class NoteDetails extends StatelessWidget {

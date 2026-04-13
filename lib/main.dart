@@ -1,9 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_app/create_note.dart';
+import 'package:notes_app/view/create_note.dart';
 import 'package:notes_app/cubit/notes_cubit.dart';
 import 'package:notes_app/firebase_options.dart';
+import 'package:notes_app/view/login_screen.dart';
+import 'package:notes_app/view/notes_list.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Notes App',
-        home: CreateNote(),
+        home: LoginScreen(),
       ),
     );
   }
