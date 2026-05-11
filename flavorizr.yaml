@@ -1,0 +1,31 @@
+flavors:
+  dev:
+    app:
+      name: "Notes Dev App"
+
+    android:
+      applicationId: "com.example.notes_app.dev"  
+    ios:
+      bundleId: "com.example.notes_app.dev"
+
+
+
+  staging:
+    app:
+      name: "Notes Stage App"
+  
+    android:
+      applicationId: "com.example.notes_app.staging"
+    ios:
+      bundleId: "com.example.notes_app.staging"
+
+
+
+  production:
+    app:
+      name: "Notes App"
+  
+    android:
+      applicationId: "com.example.notes_app"
+    ios:
+      bundleId: "com.example.notes_app"

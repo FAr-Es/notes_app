@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "dev - debug",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor", "dev",
+        "--dart-define=appFlavor=dev"
+      ]
+    },
+    {
+      "name": "staging - debug",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor", "staging",
+        "--dart-define=appFlavor=staging"
+      ]
+    },
+    {
+      "name": "production - release",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor", "production",
+        "--dart-define=appFlavor=production",
+        "--release"
+      ]
+    }
+  ]
+}
